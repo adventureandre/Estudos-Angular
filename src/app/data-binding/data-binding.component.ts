@@ -10,13 +10,14 @@ export class DataBindingComponent {
   idade: number = 34;
   checkedDisable:boolean = false;
 
-  public position:
+  public position:{x:number, y:number} = {x:0, y:0};
 
   public alertInfo(valor:MouseEvent){
     console.log(valor)
   }
 
   public mouseMoveTest (valor :MouseEvent){
-    console.log(valor)
+    this.position.x = valor.offsetX
+    this.position.y = valor.offsetY
   }
 }
