@@ -14,6 +14,7 @@ export class DataBindingComponent {
 
   public alertInfo(valor:MouseEvent){
     console.log(valor)
+    alert(valor.target);
   }
 
   public mouseMoveTest (valor :MouseEvent){

@@ -10,6 +10,14 @@
 
 <h2>Event Binding</h2>
 <button (click)="alertInfo($event)">Evento</button>
+
+<hr>
+<h2>Event Binding -- MouseMove</h2>
 <div (mousemove)="mouseMoveTest($event)" style="background: red; width: 300px; height: 300px;"></div>
 
 {{position.x}} -- {{position.y}}
+
+<hr>
+<h2>Two-Way Binding</h2>
+<input [(ngModel)]="nome"/>
+{{nome}}
