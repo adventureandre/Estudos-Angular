@@ -1,0 +1,13 @@
+<p>{{nome}} tem a idade de {{idade < 29 ? 'passou' : 'novo'}} anos</p>
+ <hr>
+
+<h2>Property Binding</h2>
+<button [disabled]="checkedDisable">Button</button>
+
+
+<hr>
+<hr>
+
+<h2>Event Binding</h2>
+<button (click)="alertInfo($event)">Evento</button>
+<div (mousemove)="mouseMoveTest($event)" style="background: red; width: 300px; height: 300px;"></div>
