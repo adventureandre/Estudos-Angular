@@ -15,6 +15,7 @@ export class AboutComponent implements OnInit {
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
       this.num = params.get("id");
+      console.log(params)
     });
   }
 }
