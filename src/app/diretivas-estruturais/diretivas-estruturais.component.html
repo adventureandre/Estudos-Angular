@@ -13,8 +13,10 @@
 <hr>
 
 <ul>
-  <li *ngFor="let item of list; let i = index;" (click)="onClickEventList(i)">
-    > [{{i}}] - {{item.nome}} - {{item.idade}} anos</li>
+  <li *ngFor="let item of list; let i = index; let cout = count;" (click)="onClickEventList(i)">
+    > [{{i}}] - {{item.nome}} - {{item.idade}} anos tem {{cout}}</li>
 </ul>
 
 <button (click)="onClickAddList()">Add</button>
+
+<hr>
