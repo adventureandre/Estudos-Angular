@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {count} from "rxjs";
 
 @Component({
   selector: 'app-diretivas-estruturais',
@@ -38,5 +37,5 @@ export class DiretivasEstruturaisComponent implements OnInit {
     this.list.splice(event,1)
   }
 
-  protected readonly count = count;
+  public nome: string = 'andre'
 }
