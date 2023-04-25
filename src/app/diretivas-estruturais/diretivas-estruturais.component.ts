@@ -37,5 +37,5 @@ export class DiretivasEstruturaisComponent implements OnInit {
     this.list.splice(event,1)
   }
 
-  public nome: string = 'andre'
+  public nome: string = 'andre';
 }
