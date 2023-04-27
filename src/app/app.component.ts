@@ -3,7 +3,10 @@ import {Component} from '@angular/core';
 @Component({
   selector: 'app-root',
   template : `
-    <app-new-component></app-new-component>
+    <app-input [contador]="addValue"></app-input>
+    <br>
+    <button (click)="add()">Add</button>
+<!--    <app-new-component></app-new-component>-->
 <!--    <app-diretivas-atributos></app-diretivas-atributos>-->
       <!--      <app-diretivas-atributos>-->
       <!--        <h1>Aulas de diretivas de Atributos</h1>-->
@@ -15,4 +18,10 @@ import {Component} from '@angular/core';
 })
 export class AppComponent{
 constructor() {}
+  public addValue:number = 0;
+public add():void{
+  this.addValue++
 }
+
+}
+
