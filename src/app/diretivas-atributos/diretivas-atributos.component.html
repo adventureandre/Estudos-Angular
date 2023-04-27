@@ -1,3 +1,5 @@
+<ng-content select="hr"></ng-content>
+
 <!--<div *ngIf="nome != 'andre'">-->
 <!--  <p [ngClass]="{'active':valor, 'disabled': !valor}" (click)="mudaValor()">Andre Atributos</p>-->
 <!--  <p [ngStyle]="{'height': height, 'background': backgroundColor,}">NGStyle</p>-->
@@ -12,9 +14,13 @@
 
 <!--<hr>-->
 
-<ng-template ngFor let-item [ngForOf]="list">
-  <p>{{item.nome}}</p>
-</ng-template>
+<!--<ng-template ngFor let-item [ngForOf]="list">-->
+<!--  <p>{{item.nome}}</p>-->
+<!--</ng-template>-->
 
-<input [(ngModel)]="nome"/>
-<button (click)="salvar()">Salvar</button>
+<!--<input [(ngModel)]="nome"/>-->
+<!--<button (click)="salvar()">Salvar</button>-->
+<!--<hr>-->
+
+
+<ng-content select="h1"></ng-content>
