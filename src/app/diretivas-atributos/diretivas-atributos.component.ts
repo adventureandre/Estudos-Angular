@@ -11,6 +11,9 @@ export class DiretivasAtributosComponent implements OnInit{
   public height:string = '20px';
   backgroundColor:string =  'red'
 
+  public nome:string = ""
+  public list:Array<{nome:string}> = []
+
   ngOnInit() {
     setInterval(()=>{
       this.valor = !this.valor
@@ -22,6 +25,11 @@ export class DiretivasAtributosComponent implements OnInit{
         this.height = '20px'
       }
     },2000)
+  }
+
+  public salvar(){
+      this.list.push({nome:this.nome})
+      this.nome = ''
   }
 
   public mudaValor(){
