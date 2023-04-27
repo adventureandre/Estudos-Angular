@@ -3,7 +3,8 @@ import {Component} from '@angular/core';
 @Component({
   selector: 'app-root',
   template : `
-    <app-diretivas-atributos></app-diretivas-atributos>
+    <app-new-component></app-new-component>
+<!--    <app-diretivas-atributos></app-diretivas-atributos>-->
       <!--      <app-diretivas-atributos>-->
       <!--        <h1>Aulas de diretivas de Atributos</h1>-->
       <!--        <hr>-->
