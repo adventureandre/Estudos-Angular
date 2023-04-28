@@ -3,9 +3,10 @@ import {Component} from '@angular/core';
 @Component({
   selector: 'app-root',
   template : `
-    <app-input [contador]="addValue"></app-input>
-    <br>
-    <button (click)="add()">Add</button>
+    <app-output></app-output>
+<!--    <app-input [contador]="addValue"></app-input>-->
+<!--    <br>-->
+<!--    <button (click)="add()">Add</button>-->
 <!--    <app-new-component></app-new-component>-->
 <!--    <app-diretivas-atributos></app-diretivas-atributos>-->
       <!--      <app-diretivas-atributos>-->
