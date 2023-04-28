@@ -3,7 +3,11 @@ import {Component} from '@angular/core';
 @Component({
   selector: 'app-root',
   template : `
-    <app-output></app-output>
+    <ng-template [ngIf]="getDados">
+    <h1>{{getDados.nome}}</h1>
+    <h2>{{getDados.idade}}</h2>
+    </ng-template>
+    <app-output (enviarDados)="setDados($event)"></app-output>
 <!--    <app-input [contador]="addValue"></app-input>-->
 <!--    <br>-->
 <!--    <button (click)="add()">Add</button>-->
@@ -24,5 +28,10 @@ public add():void{
   this.addValue++
 }
 
+public getDados:{nome:string, idade:number} | undefined;
+
+public setDados(event: { nome: string; idade: number; }){
+  this.getDados = event
 }
 
+}
